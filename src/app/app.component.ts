@@ -13,7 +13,6 @@ export class MyApp {
   rootPage: any;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
-    console.log(Meteor.user())
     this.rootPage = Meteor.user() ? ChatsPage : LoginPage;
 
     platform.ready().then(() => {
