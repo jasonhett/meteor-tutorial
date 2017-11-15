@@ -16,5 +16,3 @@ Meteor.startup(() => {
     platformBrowserDynamic().bootstrapModule(AppModule);
   });
 });
-
-platformBrowserDynamic().bootstrapModule(AppModule);
