@@ -44,7 +44,7 @@
     "@types/meteor": "^1.4.12",
     "@types/meteor-accounts-phone": "0.0.5",
     "tmp": "0.0.33",
-    "typescript": "2.4.2",
+    "typescript": "^2.6.1",
     "typescript-extends": "^1.0.1"
   },
   "description": "An Ionic project",
