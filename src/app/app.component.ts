@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { ChatsPage } from '../pages/chats/chats';
 import { Meteor } from 'meteor/meteor';
-import { LoginPage } from '../pages/login/login';
+import { LandingPage } from '../pages/landing/landing';
+import { WelcomePage } from '../pages/landing/welcome';
 
 @Component({
   templateUrl: 'app.html'
@@ -13,7 +13,7 @@ export class MyApp {
   rootPage: any;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
-    this.rootPage = Meteor.user() ? ChatsPage : LoginPage;
+    this.rootPage = Meteor.user() ? LandingPage : WelcomePage;
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

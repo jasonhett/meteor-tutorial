@@ -12,6 +12,8 @@ import { MessagesPage } from '../pages/messages/messages';
 import { MessagesOptionsComponent } from '../pages/messages/messages-options';
 import { ProfilePage } from '../pages/profile/profile';
 import { VerificationPage } from '../pages/verification/verification';
+import { LandingPage } from '../pages/landing/landing';
+import { WelcomePage } from '../pages/landing/welcome';
 import { PhoneService } from '../services/phone';
 import { MyApp } from './app.component';
 
@@ -25,7 +27,9 @@ import { MyApp } from './app.component';
     ProfilePage,
     ChatsOptionsComponent,
     NewChatComponent,
-    MessagesOptionsComponent
+    MessagesOptionsComponent,
+    LandingPage,
+    WelcomePage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,9 @@ import { MyApp } from './app.component';
     ProfilePage,
     ChatsOptionsComponent,
     NewChatComponent,
-    MessagesOptionsComponent
+    MessagesOptionsComponent,
+    LandingPage,
+    WelcomePage
   ],
   providers: [
     StatusBar,
